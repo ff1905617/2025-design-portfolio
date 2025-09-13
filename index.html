@@ -1,0 +1,387 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+	<title>Francis Fitzgerald</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body onload="startDate()">
+
+	<!--TOPNAV-->
+
+	<div class="topnav">
+
+		<div class="grid-container-half">
+
+			<div class="grid-item" id="topnav-grid-name">
+
+				<h2>Francis Fitzgerald</h2>
+
+			</div>
+
+			<div class="grid-item" id="topnav-grid-roles">
+				
+				<h3>Designer | Coder | Creative</h3>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<!--HERO-->
+
+	<div class="hero">
+
+		<div class="popup" id="intro-popup">
+
+			<div class="popup-nav">
+
+					<div class="popup-title"><h3>Welcome!</h3></div>
+
+					<button id="close-intro-popup" class="close-button">X</button>
+
+			</div>
+
+			<div class="popup-padding">
+
+			<div class="grid-container-half">
+
+				<div class="grid-item">
+
+					<img src="images/flogo_option1.svg" width="90%" height="90%">
+
+				</div>
+
+				<div class="grid-item">
+
+					<h5>My name is francis Fitzgerald</h5>
+					<div class="spacing-16"></div>
+					<p>This is my design portfolio. I coded it from scratch. Click around and have fun!</p>
+
+				</div>
+
+			</div>
+
+			</div>
+
+		</div>
+
+			<div class="icon-set-desktop">
+
+					<div class="icon" data-icon="work">
+						<img class="desktop-icon" src="images/work_icon_pastelle.png">
+						<p>my work</p>
+					</div>
+
+					<div class="icon" data-icon="about">
+						<img class="desktop-icon" src="images/about_icon_pastelle.png">
+						<p>about me</p>
+					</div>
+
+					<div class="icon" data-icon="contact">
+						<img class="desktop-icon" src="images/contact_icon_pastelle.png">
+						<p>contact me</p>
+					</div>
+
+					<div class="icon" data-icon="resume">
+						<img class="desktop-icon" src="images/resume_icon_pastelle.png">
+						<p>my resume</p>
+					</div>
+
+			</div>
+
+
+		<!--MOBILE ICONS-->
+
+		<div class="icon-set-mobile">
+
+			<!--<div class="grid-container-half">-->
+
+				<!--<div class="grid-item">-->
+
+					<div class="icon" data-icon="work">
+						<img class="desktop-icon" src="images/work_icon_pastelle.png">
+						<p>my work</p>
+					</div>
+
+					<div class="icon" id="about" data-icon="about">
+						<img class="desktop-icon" src="images/about_icon_pastelle.png">
+						<p>about me</p>
+					</div>
+
+				<!--</div>-->
+
+				<!--<div class="grid-item">-->
+
+					<div class="icon" data-icon="contact">
+						<img class="desktop-icon" src="images/contact_icon_pastelle.png">
+						<p>contact me</p>
+					</div>
+
+					<div class="icon" data-icon="resume">
+						<img class="desktop-icon" src="images/resume_icon_pastelle.png">
+						<p>my resume</p>
+					</div>
+
+				<!--</div>-->
+
+			<!--</div>-->
+
+		</div>
+
+	
+		<!--**POPUPS-->
+
+		<!--***WORK POPUP-->
+
+			<div class="popup" id="work-popup">
+
+				<div class="popup-nav">
+
+					<div class="popup-title"><h3>My Work</h3></div>
+
+					<button id="close-work-popup" class="close-button">X</button>
+
+				</div>
+
+				<div class="popup-padding">
+
+				<div class="grid-container-quarter">
+
+					<div class="grid-item">
+
+					<a href="01.html">
+						<div class="small-icon">
+							<img class="small-icon-desktop" src="images/REM_icon.png">
+							<p>REM</p>
+						</div>
+					</a>
+
+					</div>
+
+					<div class="grid-item">
+
+					<a href="02.html">
+						<div class="small-icon">
+							<img class="small-icon-desktop" src="images/skorochod_icon.png">
+							<p>Skorochod</p>
+						</div>
+					</a>
+
+					</div>
+
+					<div class="grid-item">
+
+					<a href="03.html">
+						<div class="small-icon">
+							<img class="small-icon-desktop" src="images/scopes_icon.png">
+							<p>Scopes</p>
+						</div>
+					</a>
+
+					</div>
+
+					<div class="grid-item">
+
+					<a href="04.html">
+						<div class="small-icon">
+							<img class="small-icon-desktop" src="images/move_icon.png">
+							<p>MOVE!</p>
+						</div>
+					</a>
+
+					</div>
+					
+				</div>
+
+				</div>
+
+			</div>
+
+			<div class="resize-handle"></div>
+
+			</div>
+
+		<!--***CONTACT POPUP-->
+
+			<div class="popup" id="contact-popup">
+
+					<div class="popup-nav">
+
+						<div class="popup-title"><h3>Let's Connect</h3></div>
+
+						<button id="close-contact-popup" class="close-button">X</button>
+
+					</div>
+
+				<div class="popup-padding">
+
+					<form action="https://api.web3forms.com/submit" method="POST">
+
+   						<!-- Replace with your Access Key -->
+    					<input type="hidden" name="access_key" value="7cd8b3a7-5107-43ee-84ca-043276da96f1">
+
+    					<!-- Form Inputs. Each input must have a name="" attribute -->
+
+						<p>Your Name</p>
+    					<input class="form-input" type="text" name="name" required>
+
+						<div class="spacing-16"></div>
+
+						<p>Your E-Mail</p>
+    					<input class="form-input" type="email" name="email" required>
+
+						<div class="spacing-16"></div>
+
+						<p>Your Message</p>
+    					<textarea name="message" required></textarea>
+
+						<div class="spacing-16"></div>
+
+    					<!-- Honeypot Spam Protection -->
+
+    					<!-- Custom Confirmation / Success Page -->
+    					<!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+
+    					<button type="submit">Submit Form</button>
+
+						<div class="spacing-16"></div>
+
+						<div class="checkbox-container">
+
+								<input type="checkbox" name="botcheck" class="checkbox"> 
+
+								<p>I am not a robot!</p>
+
+						</div>
+
+
+
+				</form>
+
+				</div>
+
+			</div>
+
+		<!--***ABOUT POPUP-->
+
+			<div class="popup" id="about-popup">
+
+					<div class="popup-nav">
+
+						<div class="popup-title"><h3>About Me</h3></div>
+
+						<button id="close-about-popup" class="close-button">X</button>
+
+					</div>
+
+
+			<div class="popup-padding">
+
+				<div class="grid-container-half">
+
+					<div class="grid-item">
+
+						<img id="pfp" src="images/pfp.jpg">
+
+					</div>
+
+					<div class="grid-item">
+
+						<h5>Francis Fitzgerald</h5>
+
+						<div class="spacing-16"></div>
+
+						<ul>
+							<li>Francis-Fitzgerald</li>
+
+							<li>francisfitzgerald08@gmail.com</li>
+
+							<li>508.801.0499</li>
+
+						</ul>
+
+					</div>
+
+				</div>
+
+				<div class="spacing-16"></div>
+
+						<p>
+							I’m a designer based in Boston and a Senior in Communication Design 
+							at Massachusetts College of Art and Design. I’m a Massachusetts native and have lived here my whole life. 
+							Outside of design, I love gardening, music and drawing. My background is 
+							in manufacturing, however, I decided to make a career shift in 2023 and 
+							pursue design because it aligned more with the things I love.
+						</p>
+						<br>
+						<p>
+							I started at Massart in Fall of 2023 and fell in love with design, particularly for the web. 
+							I taught myself HTML, CSS and a little bit of Javascript while working on a personal project and 
+							became fascinated with building content for the web that inspires people to 
+							be more creative. I am excited to learn more and continue to expand my skillset. 
+							As a designer, I aim to create interesting, yet usable web-based experiences 
+							because who says functional design has to be boring?
+						</p>
+
+				</div>
+
+			</div>
+
+		<!--***RESUME POPUP-->
+
+			<div class="popup" id="resume-popup">
+
+				<div class="popup-nav">
+
+						<div class="popup-title"><h3>My Resume</h3></div>
+
+						<button id="close-resume-popup" class="close-button">X</button>
+
+				</div>
+
+				<div class="popup-padding">
+
+					<a href="ffitzgerald_resume_2025.pdf" download><button>Download</button></a>
+
+					<div class="spacing-16"></div>
+
+					<a href="ffitzgerald_resume_2025.pdf"><button>View</button></a>
+
+				</div>
+
+
+			</div> 
+
+	</div>
+
+	<!--BOTTOMNAV-->
+
+	<div class="bottomnav">
+
+		<div class="grid-container-half">
+
+			<div class="grid-item" id="bottomnav-grid-logo">
+
+				<img id="logo-white" src="images/flogo_option2.svg";>
+
+			</div>
+
+			<div class="grid-item" id="bottomnav-grid-DT">
+
+				<h4 id="clock"></h4>
+				<h4 id="date"></h4>
+				
+			</div>
+
+
+		</div>
+
+	</div>
+
+</body>
+</html>
